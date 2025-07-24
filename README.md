@@ -1,5 +1,17 @@
 # LangChain Crash Course - Gemini Edition
 
+**Why does this repo exist?**
+
+Many AI APIs like OpenAI require payment, which can be a barrier for learners and open source enthusiasts. This repo solves that by focusing on Gemini, Google's free API, so anyone can run all the code examples without hitting a paywall. Everything here is open source and runnable out of the box—no credit card required!
+
+Our goal is to provide a fully open source, community-driven resource for:
+- Learning how to use LangChain with Gemini step-by-step
+- Building your own AI chatbots, RAG systems, and agents
+- Sharing and expanding free, practical examples for the community
+- Lowering the barrier to entry for AI development
+
+Whether you're a beginner or an experienced developer, this repo is designed to help you get started quickly and contribute back to the ecosystem.
+
 Welcome to the LangChain Crash Course repository! This repo contains all the code examples you'll need to follow along with the LangChain Master Class for Beginners video. By the end of this course, you'll know how to use LangChain to create your own AI agents, build RAG chatbots, and automate tasks with AI.
 
 ## Course Outline
@@ -93,6 +105,8 @@ Poetry is a tool for dependency management and packaging in Python. Follow these
    ```
 
 ## Repository Structure
+
+This project is fully open source and aims to provide a free, community-driven resource for learning LangChain with Gemini. Contributions, suggestions, and new Gemini-based examples are welcome!
 
 Here's a breakdown of the folders and what you'll find in each:
 
