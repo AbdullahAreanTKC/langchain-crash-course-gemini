@@ -13,6 +13,41 @@ Welcome to the LangChain Crash Course repository! This repo contains all the cod
 
 ## Getting Started
 
+### Poetry Installation (Step-by-Step)
+
+Poetry is a tool for dependency management and packaging in Python. Follow these steps to install Poetry on your system:
+
+1. **Install Poetry using the official installer:**
+
+   ```bash
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+
+2. **Add Poetry to your PATH:**
+   
+   By default, Poetry is installed to `$HOME/.local/bin`. Make sure this directory is in your `PATH`.
+   
+   Add the following line to your `~/.bashrc`, `~/.zshrc`, or equivalent shell config file:
+   
+   ```bash
+   export PATH="$HOME/.local/bin:$PATH"
+   ```
+   Then reload your shell:
+   ```bash
+   source ~/.bashrc  # or source ~/.zshrc
+   ```
+
+3. **Verify the installation:**
+
+   ```bash
+   poetry --version
+   ```
+   You should see the installed Poetry version.
+
+---
+
+- For more details, see the [Poetry installation guide](https://python-poetry.org/docs/#installation).
+
 ### Prerequisites
 
 - Python 3.10 or 3.11
