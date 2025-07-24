@@ -1,13 +1,21 @@
 from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 # Load environment variables from .env
 load_dotenv()
 
 # Create a ChatOpenAI model
-model = ChatOpenAI(model="gpt-4o")
-
+# model = ChatOpenAI(model="gpt-4o")
+model = ChatGoogleGenerativeAI(
+    model="gemini-2.0-flash",
+    client_options=None,
+    transport=None,
+    additional_headers=None,
+    client=None,
+    async_client=None
+)
 # SystemMessage:
 #   Message for priming AI behavior, usually passed in as the first of a sequenc of input messages.
 # HumanMessagse:

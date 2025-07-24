@@ -2,13 +2,22 @@ from dotenv import load_dotenv
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import RunnableLambda
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import ChatOpenAI
 
 # Load environment variables from .env
 load_dotenv()
 
 # Create a ChatOpenAI model
-model = ChatOpenAI(model="gpt-4o")
+# model = ChatOpenAI(model="gpt-4o")
+model = ChatGoogleGenerativeAI(
+    model="gemini-2.0-flash",
+    client_options=None,
+    transport=None,
+    additional_headers=None,
+    client=None,
+    async_client=None
+)
 
 # Define prompt templates
 prompt_template = ChatPromptTemplate.from_messages(

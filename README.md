@@ -1,4 +1,4 @@
-# LangChain Crash Course
+# LangChain Crash Course - Gemini Edition
 
 Welcome to the LangChain Crash Course repository! This repo contains all the code examples you'll need to follow along with the LangChain Master Class for Beginners video. By the end of this course, you'll know how to use LangChain to create your own AI agents, build RAG chatbots, and automate tasks with AI.
 
@@ -34,12 +34,15 @@ Welcome to the LangChain Crash Course repository! This repo contains all the cod
    poetry install --no-root
    ```
 
-3. Set up your environment variables:
+3. Collect your Gemini API key and set up environment variables:
 
-   - Rename the `.env.example` file to `.env` and update the variables inside with your own values. Example:
+   - Go to the [Google AI Studio](https://aistudio.google.com/app/apikey) and sign in with your Google account.
+   - Click "Create API Key" and copy your new Gemini API key.
+   - Rename the `.env.example` file to `.env` and update the `GEMINI_API_KEY` variable inside with your key. Example:
 
    ```bash
    mv .env.example .env
+   # Then edit .env and set GEMINI_API_KEY=your-key-here
    ```
 
 4. Activate the Poetry shell to run the examples:
